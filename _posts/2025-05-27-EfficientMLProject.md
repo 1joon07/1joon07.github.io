@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "포스팅 테스트"
+title: "Efficient ML Project Blog Post"
 ---
 
 ## Introduction
