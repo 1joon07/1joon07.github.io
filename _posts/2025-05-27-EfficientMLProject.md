@@ -13,14 +13,12 @@ To realize this, our team focuses on building an efficient image-guided flow-bas
 
 Related Works
 ============
-1. Diffusion/Flow-based Models in Robotics
-------------------------------------------
+__1. Diffusion/Flow-based Models in Robotics__   
 The remarkable success of generative models in language and vision domains has sparked growing interest in their application to robotics. With their strong expressive power, generative models can
 produce complex trajectories and simulate highly non-linear system dynamics. Among various robotic systems, robot manipulators have been the most widely studied in this context. For example, [1] proposed a framework that learns smooth cost functions using diffusion models in SE(3) space, enabling joint optimization of 6-DoF grasp poses and motion trajectories.   
 Similarly, there are some approaches to utilize generative models for UAVs. For example, [3] introduced a conditional diffusion model to learn quadrotor dynamics, leading to improved robustness and reliability in model-based control. However, relatively less research has been conducted on efficiently applying generative models to UAVs.
 
-2. Model Optimization
----------------------
+__2. Model Optimization__   
 As neural networks often require intensive computation, designing an efficient model has become a crucial task, especially for deployment on resource-constrained devices. For instance, [4] imple-mented an efficient image classification model on microcontrollers using neural architecture search (NAS). There are active works that made diffusion model more efficient, by applying quantization [4] and reducing the number of iteration steps [5,6].
 
 Methods
