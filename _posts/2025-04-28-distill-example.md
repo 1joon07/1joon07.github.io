@@ -1,5 +1,5 @@
 ---
-layout: distill
+layout: post
 title: Sample Blog Post
 description: Your blog post's abstract.
   Please add your abstract or summary here and not in the main body of your text. 
