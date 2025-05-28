@@ -2,6 +2,7 @@
 layout: single
 title: "Efficient ML Project Blog Post"
 ---
+## Project Title
 
 ### Introduction
 Our project is to implement a trajectory generation neural network model on a microcontroller unit (MCU) equipped on an Unmanned Aerial Vehicle (UAV).   
