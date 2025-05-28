@@ -114,7 +114,7 @@ analytics:
 # Site Author
 author:
   name             : "Won Joon Choi"
-  avatar           : "assets\images\aris.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "assets/images/aris.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "BEVIL lab, POSTECH"
   location         : "Pohang-si, Gyeongsangbook-do"
   email            : "wj.choi@postech.ac.kr"
