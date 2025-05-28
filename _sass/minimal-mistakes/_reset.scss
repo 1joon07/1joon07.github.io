@@ -9,21 +9,21 @@ html {
   box-sizing: border-box;
   background-color: $background-color;
   // font-size: $doc-font-size;
-  font-size: 18px;
+  font-size: 20px;
 
   @include breakpoint($medium) {
     // font-size: $doc-font-size-medium;
-    font-size: 18px;
+    font-size: 20px;
   }
 
   @include breakpoint($large) {
     // font-size: $doc-font-size-large;
-    font-size: 18px;
+    font-size: 20px;
   }
 
   @include breakpoint($x-large) {
     //  font-size: $doc-font-size-x-large;
-    font-size: 18px;
+    font-size: 20px;
   }
 
   -webkit-text-size-adjust: 100%;
