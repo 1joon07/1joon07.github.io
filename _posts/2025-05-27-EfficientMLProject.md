@@ -35,7 +35,7 @@ __1. Memory-efficient U-Net-based diffusion model__
 <center>
 [U-Net model with skip connection compression]
 </center>
-<br>
+<br><br>
 As our model should run on a single board computer on a vehicle, which has limited computing resources. In order to realize a diffusion model, which generates the future trajectory of the automotive, Our team developed a diffusion model which has a memory-efficient U-Net structure. By adopting the encoder-decoder structure for the skip connection, the model can save memory while showing the comparable performance in trajectory generation.
 
 __2. 2D-lidar image guidance__   
@@ -45,7 +45,7 @@ __2. 2D-lidar image guidance__
 <center>
 [An example 2D lidar image]
 </center>
-<br>
+<br><br>
 In order to let the model to generate a trajectory of the vehicle, the model needs to obtain information of its surroundings. Therefore, our team suggests implementing a 2D lidar image as a guidance. 2D lidar images can be easily obtained by attaching a lidar on the vehicle, and gives spatial structures of the surroundings which could be effective for generating a safe trajectory for automotives.
 
 Results
