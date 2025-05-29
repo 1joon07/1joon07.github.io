@@ -23,13 +23,13 @@ As neural networks often require intensive computation, designing an efficient m
 
 Methods
 =======
-__1. Memory-efficient U-Net-based diffusion model__
+__1. Memory-efficient U-Net-based diffusion model__   
 ![image](/assets/images/Efficient_ML_figure1.png)   
 U-Net model with skip connection compression   
    
 As our model should run on a single board computer on a vehicle, which has limited computing resources. In order to realize a diffusion model, which generates the future trajectory of the automotive, Our team developed a diffusion model which has a memory-efficient U-Net structure. By adopting the encoder-decoder structure for the skip connection, the model can save memory while showing the comparable performance in trajectory generation.
 
-__2. 2D-lidar image guidance__
+__2. 2D-lidar image guidance__   
 ![image](/assets/images/Efficient_ML_figure2.png)   
 An example 2D lidar image   
    
