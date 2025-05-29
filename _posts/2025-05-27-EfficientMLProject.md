@@ -5,7 +5,7 @@ title: "Efficient ML Project Blog Post"
 
 Project Title
 =============
-__Image-guided trajectory generation model for automotives__
+__<span style="font-size:130%">Image-guided trajectory generation model for automotives</span>__
 
 authors
 =======
