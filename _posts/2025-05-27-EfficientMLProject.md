@@ -3,8 +3,9 @@ layout: single
 title: "Efficient ML Project Blog Post"
 ---
 
-Project Title
+Project Title: Image-guided trajectory generation model for automotives
 =============
+## authors: Jiho Ryoo, Won Joon Choi
 
 Introduction
 ============
