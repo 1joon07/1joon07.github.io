@@ -7,7 +7,7 @@ Project Title
 =============
 <span style="font-size:130%">Image-guided trajectory generation model for automotives</span>
 
-authors
+Authors
 =======
 Jiho Ryoo, Won Joon Choi
 
