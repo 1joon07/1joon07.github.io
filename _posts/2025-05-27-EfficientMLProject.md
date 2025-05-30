@@ -43,7 +43,11 @@ In order to let the model to generate a trajectory of the vehicle, the model nee
 
 Experiments
 ===========
-
+__1. Real-world trajectory dataset__
+<p align="center">
+  <img src="/assets/images/Efficient_ML_figure3.png">
+</p>
+In order to train a trajectory-generating diffusion model, we obtained real-world driving data using a RC car. The target task is to park in the designated position, which is surrounded with boxes. Total of 70 episodes of parking dataset is made. The dataset includes 1. LiDAR scan data, 2. velocity, 3. throttle and 4. steering command.
 
 Results
 =======
