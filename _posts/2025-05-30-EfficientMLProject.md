@@ -61,8 +61,7 @@ Using memory-efficient U-Net we proposed, we were able to not only save RAM usag
 </p>
 
 __2. Driving performance__  
-The trained model is implemented on SBC (Jetson), and 
-
+The trained model is implemented on SBC (Jetson).
 
 Discussions
 ===========
