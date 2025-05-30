@@ -49,11 +49,16 @@ __1. Real-world trajectory dataset__
 </p>
 In order to train a trajectory-generating diffusion model, we obtained real-world driving data using a RC car. The target task is to park in the designated position, which is surrounded with boxes. Total of 70 episodes of parking dataset is made. The dataset includes 1. LiDAR scan data, 2. velocity, 3. throttle and 4. steering command.
 
-__2. Training__
+__2. Training__   
 We trained the model with batch size 512, 100 epoch, learning rate 1e-5, skip connection compression ratio 50% for the first layer and 75% for the second layer.
 
 Results
 =======
+__1. Memory saving__   
+Using memory-efficient U-Net we proposed, we were able to not only save RAM usage, but also improve performance. This memory-efficient U-Net converged faster, where U-Net without this method often diverged. 
+
+__2. Driving performance__  
+The trained model is implemented on SBC (Jetson), and 
 
 
 Discussions
