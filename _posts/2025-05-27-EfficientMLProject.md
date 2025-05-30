@@ -5,7 +5,7 @@ title: "Efficient ML Project Blog Post"
 
 Project Title
 =============
-<span style="font-size:130%">Image-guided trajectory generation model for automotives</span>
+<span style="font-size:130%">Lidar image-guided trajectory generation model for automotives</span>
 
 Authors
 =======
@@ -13,18 +13,17 @@ Jiho Ryoo, Won Joon Choi
 
 Introduction
 ============
-Our project is to implement a trajectory generation neural network model on a microcontroller unit (MCU) equipped on an Unmanned Aerial Vehicle (UAV).   
-To realize this, our team focuses on building an efficient image-guided flow-based model that is light enough to run on a low-performance Single Board Computer (SBC).
+Our project is to implement a trajectory generation neural network model on a Single Board Computer (SBC) equipped on an automotive.   
+To realize this, our team focuses on building an efficient lidar image-guided generative model that is light enough to run on a low-performance computer.
 
 Related Works
 ============
-__1. Diffusion/Flow-based Models in Robotics__   
-The remarkable success of generative models in language and vision domains has sparked growing interest in their application to robotics. With their strong expressive power, generative models can
-produce complex trajectories and simulate highly non-linear system dynamics. Among various robotic systems, robot manipulators have been the most widely studied in this context. For example, [1] proposed a framework that learns smooth cost functions using diffusion models in SE(3) space, enabling joint optimization of 6-DoF grasp poses and motion trajectories.   
-Similarly, there are some approaches to utilize generative models for UAVs. For example, [3] introduced a conditional diffusion model to learn quadrotor dynamics, leading to improved robustness and reliability in model-based control. However, relatively less research has been conducted on efficiently applying generative models to UAVs.
+__1. Diffusion Models in Robotics__   
+The remarkable success of generative models in language and vision domains has sparked growing interest in their application to robotics. With their strong expressive power, generative models can produce complex trajectories and simulate highly non-linear system dynamics. Among various robotic systems, robot manipulators have been most widely studied in this context. For example, [1] proposed a framework that learns smooth cost functions using diffusion models in SE(3) space, enabling joint optimization of 6-DoF grasp poses and motion trajectories.   
+Similarly, there are some approaches to utilize generative models for automotives. For example, [3] introduced a conditional diffusion model to learn quadrotor dynamics, leading to improved robustness and reliability in model-based control. However, relatively less research has been conducted on efficiently applying generative models to automotives.
 
 __2. Model Optimization__   
-As neural networks often require intensive computation, designing an efficient model has become a crucial task, especially for deployment on resource-constrained devices. For instance, [4] imple-mented an efficient image classification model on microcontrollers using neural architecture search (NAS). There are active works that made diffusion model more efficient, by applying quantization [4] and reducing the number of iteration steps [5,6].
+As neural networks often require intensive computations, designing an efficient model has become a crucial task, especially for deployment on resource-constrained devices. For instance, [4] implemented an efficient image classification model on microcontrollers using Neural Architecture Search (NAS). There are active works that made diffusion model more efficient, by applying quantization [4] and reducing the number of iteration steps [5,6].
 
 Methods
 =======
@@ -33,14 +32,18 @@ __1. Memory-efficient U-Net-based diffusion model__
   <img src="/assets/images/Efficient_ML_figure1.png">
 </p>
 <center>[U-Net model with skip connection compression]</center><br>
-As our model should run on a single board computer on a vehicle, which has limited computing resources. In order to realize a diffusion model, which generates the future trajectory of the automotive, Our team developed a diffusion model which has a memory-efficient U-Net structure. By adopting the encoder-decoder structure for the skip connection, the model can save memory while showing the comparable performance in trajectory generation.
+Our model should run on a single board computer on a vehicle, which has limited resources. In order to realize a diffusion model, which generates the future trajectory of the automotive, Our team developed a diffusion model which has a memory-efficient U-Net structure. By adopting the encoder-decoder based compressor network for the skip connection, the model can save memory while improving the quality at the same time.
 
 __2. 2D-lidar image guidance__   
 <p align="center">
   <img src="/assets/images/Efficient_ML_figure2.png">
 </p>
 <center>[An example 2D lidar image]</center><br>
-In order to let the model to generate a trajectory of the vehicle, the model needs to obtain information of its surroundings. Therefore, our team suggests implementing a 2D lidar image as a guidance. 2D lidar images can be easily obtained by attaching a lidar on the vehicle, and gives spatial structures of the surroundings which could be effective for generating a safe trajectory for automotives.
+In order to let the model to generate a trajectory of the vehicle, the model needs to obtain information of its surroundings. Therefore, our team suggests implementing a 2D lidar image as a guidance. 2D range images can be easily be obtained by attaching a lidar on the vehicle. It gives spatial structures of the surroundings which could be effective for generating a safe trajectory for automotives.
+
+Experiments
+===========
+
 
 Results
 =======
