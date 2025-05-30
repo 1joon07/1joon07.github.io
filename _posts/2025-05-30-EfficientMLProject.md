@@ -65,7 +65,7 @@ The trained model is implemented on SBC (Jetson).
 
 Discussions
 ===========
-In this project, our team presents an efficient diffusion model which generates a trajectory of an automotives, guided by the 2D lidar image. The proposed model is light enough to run on an SBC with limited computing resources.   
+In this project, our team presents an efficient diffusion model which generates a trajectory of automotives, guided by a 2D lidar image. The proposed model is light enough to run on an SBC with limited computing resources.   
 By implementing more various guidances including embedded RGB images, our model is expected to show more reliable trajectory generation performance.
 
 References
