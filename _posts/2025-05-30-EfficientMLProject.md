@@ -55,7 +55,10 @@ We trained the model with batch size 512, 100 epoch, learning rate 1e-5, skip co
 Results
 =======
 __1. Memory saving__   
-Using memory-efficient U-Net we proposed, we were able to not only save RAM usage, but also improve performance. This memory-efficient U-Net converged faster, where U-Net without this method often diverged. 
+Using memory-efficient U-Net we proposed, we were able to not only save RAM usage, but also improve performance. This memory-efficient U-Net converged faster, where U-Net without this method often diverged.
+<p align="center">
+  <img src="/assets/images/Efficient_ML_figure4.png">
+</p>
 
 __2. Driving performance__  
 The trained model is implemented on SBC (Jetson), and 
